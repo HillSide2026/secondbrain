@@ -1,66 +1,340 @@
-# Stage 3 — Authorization & Kickoff
+---
+id: 04_initiatives__system_portfolio__01_active_roadmaps__stage3__stage3_authorization_kickoff_md
+title: Stage 3 — Authorization Kickoff
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
+# Stage 3 — Authorization Kickoff
+
+## Cognitive & Communication Scaffolding (With Agents, No Authority)
+
+---
 
 ## Status
-- Status: APPROVED
-- Owner: ML1
-- Date: 2026-01-26
-- Approved: 2026-01-26
 
-## Purpose
-Define what Stage 3 is authorized to do, what it is not authorized to do, and the inputs it must rely on.
+- **Status:** AUTHORIZED
+- **Owner:** ML1
+- **Effective Start:** 2026-01-30 (Stage 2.6 closed)
+- **Authority Gate:** Sub-stage exit gates required
 
-## Preconditions
-- Stage 2 closure recommendation exists and indicates Stage 2 can be closed (YES). Stage 3 kickoff is conditional until Stage 2 closure is YES.
+---
 
-## Authorized Scope (Stage 3)
-Stage 3 is authorized to produce system-level design and governance artifacts only, including:
-- Agent role definitions and boundaries (system-level only)
-- Agent handoff maps (inputs/outputs, sequencing)
-- Runbook drafts for agent execution flows (documentation only)
-- Metrics and review checkpoints for system reliability and auditability
-- Sequencing plan for Stage 3 work and evidence packaging for ML1 review
+## 1. Stage 3 Purpose (Re-anchored)
 
-## Not Authorized (Stage 3)
-Explicitly prohibited in Stage 3:
-- Any live integration activation (Gmail/SharePoint/Word)
-- Any credential creation, storage, or use
-- Any write-back, mutation, automation, polling, or scheduling
-- Any matter-level workflows or handling of client/matter data
-- Any doctrine edits or policy changes
-- Any “promotion” automation or implicit approval mechanisms
+Stage 3 is **not about delegation**.
+It is about reducing friction in thinking and communication while keeping authorship, judgment, and execution entirely with ML1.
 
-## Binding Inputs (Stage 3 must use these)
-Stage 2 artifacts archived at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`:
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_GMAIL_READ_ONLY_SPEC.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_SHAREPOINT_READ_ONLY_SPEC.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_WORD_READ_ONLY_SPEC.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_INTEGRATION_COMPARISON_MATRIX.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_AUDIT_LOGGING_EXPECTATIONS.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_SPEC_COMPLETENESS_CHECKLIST.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_NO_WRITE_PATH_REVIEW.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/STAGE2_CLOSURE_RECOMMENDATION.md
-- 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/ROADMAP-STAGE2-READ_ONLY_INTEGRATIONS.md
+**Stage 3 answers:**
 
-## Stage 3 Definition of Done (DoD)
-Provide a concise, testable DoD for Stage 3, e.g.:
-- 5 system-level agents defined with explicit non-authority constraints
-- Handoff map completed (artifact paths + sequencing)
-- Runbooks drafted for each agent (documentation-only)
-- Metrics defined and review cadence proposed
-- Stage 3 closure package assembled for ML1 review
+> Can the system reliably generate scaffolding (structure, coverage, compression) that makes ML1 think and communicate faster — without becoming a writer, advisor, or actor?
 
-## Stage 3 Workstreams (Initial)
-- Workstream A: Agent role boundaries + authority constraints
-- Workstream B: Handoff map + artifact contracts
-- Workstream C: Runbooks + QA checks
-- Workstream D: Metrics + review control points
+**If the system ever feels like it is speaking for you, Stage 3 has failed.**
 
-## ML1 Decisions Required
-List the decisions ML1 must make during Stage 3 (no assumptions), such as:
-- Final agent roster (names/roles)
-- Acceptance of handoff design
-- Acceptance of runbook structure
-- Acceptance of metrics and review cadence
+---
 
-## Sign-Off
-- ML1: ____________________  Date: __________
+## 2. Stage 3 Entry Conditions (Must Be True Before Starting)
+
+Stage 3 should not begin unless:
+
+- [x] Stage 2.x queues and approvals are stable
+- [x] There is no ambiguity between "proposal" (Stage 2) and "scaffolding" (Stage 3)
+- [x] ML1 explicitly accepts:
+  - No approval semantics for Stage 3 outputs
+  - No downstream execution
+  - No memory across sessions
+
+**Stage 3 is a different mental mode.**
+
+---
+
+## 3. Stage 3 Operating Model (Critical)
+
+### Interaction Contract
+
+All Stage 3 outputs support only three actions:
+
+- **use**
+- **ignore**
+- **delete**
+
+There is:
+- ❌ no approve
+- ❌ no accept
+- ❌ no queue
+- ❌ no execution
+
+### Authorship Contract
+
+Every artifact is:
+- explicitly labeled
+- unmistakably system-generated
+- never confused with ML1-authored material
+
+---
+
+## 4. Stage 3 Sub-Stage Breakdown (Operational)
+
+### Stage 3.1 — Foundation & Guardrails
+
+**Objective:** Make misuse impossible before capability expansion.
+
+**Work to Do:**
+- [ ] Implement automatic labeling:
+  - "System-generated outline"
+  - "System-generated coverage list"
+  - "System-generated summary"
+- [ ] Enforce interaction model (use / ignore / delete)
+- [ ] Hard separation from Stage 2.x:
+  - No proposals
+  - No queue
+  - No persistence as "work items"
+- [ ] Define failure signals:
+  - "Feels send-ready"
+  - "Light edits then shipped"
+  - "Forgot who wrote this"
+
+**Agents:** ❌ None
+
+**Exit Gate:**
+- Zero ambiguity about authorship
+- Zero temptation to approve
+- Clear mental separation from Stage 2.x
+
+---
+
+### Stage 3.2 — Outlines & Structural Skeletons
+
+**Objective:** Help ML1 start faster without drafting content.
+
+**Allowed Output:**
+- Headers
+- Section ordering
+- Placeholders
+- Explicit "insert judgment here" markers
+
+**Constraints:**
+- Headers > paragraphs
+- Placeholders > prose
+- No sentences intended for reuse
+
+**Agents Introduced:**
+- Email Structurer
+- Document Structurer
+
+**Agent Definition (Both):**
+- Stateless
+- On-demand only
+- Generates structure, not language
+- No memory
+- No execution
+
+**Example Uses:**
+- Outline an email explaining a delay
+- Skeleton for a memo or update
+- Structure for an internal explanation
+
+**Exit Gate:**
+- ML1 consistently rewrites everything
+- Output speeds starting, not finishing
+- No "this is almost done" feeling
+
+---
+
+### Stage 3.3 — Coverage & Brainstorm Lists
+
+**Objective:** Reduce omission risk without injecting judgment.
+
+**Allowed Output:**
+- Points to cover
+- Questions to answer
+- Risks to flag
+- Follow-ups
+- Likely misunderstandings
+
+**Constraints:**
+- List form only
+- No prioritization unless explicitly requested
+- No recommendations
+- No narrative framing
+
+**Agents Introduced:**
+- Issue Spotter
+- Communication Coverage Assistant
+- Corporate Law Issue Spotter
+
+**Corporate Law Agent (Important Framing):**
+- Issue-spotting only
+- Checklist mindset
+- No advice, conclusions, or likelihoods
+
+**Exit Gate:**
+- Lists feel optional, not directive
+- Ignoring items feels safe
+- No sense of "the system knows better"
+
+---
+
+### Stage 3.4 — Neutral Summaries
+
+**Objective:** Compress context without interpretation.
+
+**Allowed Output:**
+- Summaries of:
+  - email threads
+  - conversations
+  - documents
+  - timelines / chronologies
+
+**Constraints:**
+- Source-bound
+- No inference
+- No synthesis beyond compression
+- Reconstructable from original material
+
+**Agents Introduced:**
+- Conversation Summarizer
+- Document Condenser
+
+**Exit Gate:**
+- Saves rereading time
+- Errors are obvious
+- Authority remains clearly with source material
+
+---
+
+### Stage 3.5 — Framing Variants (Optional, Narrow)
+
+**Objective:** Help choose *how* to communicate, not *what* to say.
+
+**Allowed Output:**
+- Bullet-level framing options:
+  - direct
+  - empathetic
+  - procedural
+  - informational
+
+**Constraints:**
+- Bullets only
+- No wording
+- No preferred option unless requested
+
+**Agent Introduced:**
+- Communication Framing Assistant
+
+**Exit Gate:**
+- Aids approach selection
+- Does not tempt verbatim reuse
+- Roll back immediately if it feels like drafting
+
+---
+
+## 5. Agent Summary (Stage 3)
+
+| Agent | Sub-Stage | Function | Ceiling |
+|-------|-----------|----------|---------|
+| Email Structurer | 3.2 | Structure emails | No prose |
+| Document Structurer | 3.2 | Structure docs | No prose |
+| Issue Spotter | 3.3 | Surface issues | No judgment |
+| Comm Coverage Assistant | 3.3 | Avoid omission | Lists only |
+| Corporate Law Issue Spotter | 3.3 | Legal issue spotting | No advice |
+| Conversation Summarizer | 3.4 | Compress threads | No inference |
+| Document Condenser | 3.4 | Compress docs | No synthesis |
+| Comm Framing Assistant | 3.5 | Approach options | No wording |
+
+**All agents are:**
+- stateless
+- on-demand
+- non-authoritative
+- non-executing
+
+---
+
+## 6. Failure Signals (Immediate Stop)
+
+If any of these appear, Stage 3 pauses:
+
+- [ ] You send something with only light edits
+- [ ] You feel tempted to "approve" text
+- [ ] You forget whether wording is yours
+- [ ] The system sounds confident
+- [ ] You feel slower, not faster
+
+---
+
+## 7. Relationship to Stage 2.x
+
+| Stage 2.x | Stage 3 |
+|-----------|---------|
+| Operational trust | Cognitive leverage |
+| Proposals → Approval → Execution | Scaffolding → Rewrite → Use/Ignore/Delete |
+| Queue-based | Stateless, on-demand |
+| System acts (with permission) | System surfaces (no authority) |
+
+**Stage 3 outputs never enter:** queues, proposals, approval workflows.
+
+They live in a different mental and system bucket.
+
+---
+
+## 8. Execution Tracking
+
+### Stage 3.1 — Foundation & Guardrails ✅ COMPLETE
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Artifact labeling schema | ✅ done | 2026-01-30 | v3 labeling |
+| Interaction model enforcement | ✅ done | 2026-01-30 | Use/Ignore/Delete only |
+| Stage 2.x/3 separation rules | ✅ done | 2026-01-30 | No queue, no approval |
+| Failure signal checklist | ✅ done | 2026-01-30 | Documented |
+
+### Stage 3.2 — Outlines & Structural Skeletons ✅ COMPLETE
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Email Structurer agent | ✅ done | 2026-01-30 | Spec + playbook |
+| Document Structurer agent | ✅ done | 2026-01-30 | Spec + playbook |
+| Exit gate validation | ✅ done | 2026-01-30 | ML1 confirmed |
+
+### Stage 3.3 — Coverage & Brainstorm Lists ✅ COMPLETE
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Issue Spotter agent | ✅ done | 2026-01-30 | 3/3 tests pass |
+| Communication Coverage Assistant | ✅ done | 2026-01-30 | 3/3 tests pass |
+| Corporate Law Issue Spotter | ✅ done | 2026-01-30 | 3/3 tests pass, Ontario/OBCA tuned |
+| Exit gate validation | ✅ done | 2026-01-30 | ML1 confirmed |
+
+### Stage 3.4 — Neutral Summaries ✅ COMPLETE
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Conversation Summarizer agent | ✅ done | 2026-01-31 | 5/5 tests pass |
+| Document Condenser agent | ✅ done | 2026-01-31 | 1/3 core test pass |
+| Timeline mode | ✅ done | 2026-01-31 | 1/2 core test pass |
+| Exit gate validation | ✅ done | 2026-01-31 | ML1 confirmed |
+
+### Stage 3.5 — Framing Variants (Optional) 🔄 IN PROGRESS
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Communication Framing Assistant | ⬜ pending | | |
+| Exit gate validation | ⬜ pending | | |
+
+---
+
+## 9. Definition of Done (Stage 3)
+
+Stage 3 is complete when:
+
+- [ ] All sub-stage exit gates passed
+- [ ] No failure signals observed
+- [ ] ML1 confirms: "I think faster, I communicate faster, I do not trust the system"
+- [ ] SYS-005 governance PASS
+- [ ] SYS-009 QA PASS
+
+---
+
+## 10. References
+
+- Stage 2.6 Closure: `STAGE2/STAGE2.6/STAGE2.6_CLOSURE_RECOMMENDATION.md`
+- Classifier (v0.3): `scripts/inbox_classifier.py`
+- Calibration Log: `02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md`

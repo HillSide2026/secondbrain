@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__system_portfolio__00_draft_roadmaps__roadmap-system-2026w05_md
+title: System Roadmap 2026-W05
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # System Roadmap 2026-W05
 
 **Status:** ACTIVE
@@ -30,7 +40,12 @@ ROADMAP-SYSTEM-2026W05
 └── Stage 2 — Implementation & Operations 🔄 ACTIVE
     ├── 2.1 Agent Runtime Setup
     ├── 2.2 Integration Activation
-    └── 2.3 Operational Validation
+    ├── 2.3 Operational Validation
+    ├── 2.9 Drive Integration Setup
+    ├── 2.10 Move Authoritative Ledger to Drive
+    ├── 2.11 Matter Management Agent
+    ├── 2.12 Calendar Scheduling
+    └── 2.13 Gmail Matter Labeling
 ```
 
 ---
@@ -47,7 +62,7 @@ ROADMAP-SYSTEM-2026W05
 - Architecture map for integrations and agent roles documented
 - Risks and dependencies logged
 
-**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/`
+**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.1/`
 
 ### 1.2 Read-Only Integration Foundation ✅
 **DoD:**
@@ -56,7 +71,7 @@ ROADMAP-SYSTEM-2026W05
 - Integration approach options compared with tradeoffs
 - Pilot test plan drafted
 
-**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`
+**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ### 1.3 System-Level Agent Orchestration ✅
 **DoD:**
@@ -65,7 +80,7 @@ ROADMAP-SYSTEM-2026W05
 - Runbooks scoped for agent execution flows
 - Metrics for reliability + throughput defined
 
-**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE3/` (ready for archive)
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/` (ready for archive)
 
 ### 1.4 Portfolio Operating Rhythm ✅
 **DoD:**
@@ -74,7 +89,7 @@ ROADMAP-SYSTEM-2026W05
 - Promotion criteria drafted for ML1 decision
 - Audit checklist drafted
 
-**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE4/` (ready for archive)
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.4/` (ready for archive)
 
 ---
 
@@ -114,6 +129,46 @@ ROADMAP-SYSTEM-2026W05
 - System declared operational for steady-state use
 
 **Backlog Items:** SYS-010, SYS-011, metrics baseline, rhythm adjustment
+
+### 2.9 Drive Integration Setup 🟨 BACKLOG
+**DoD:**
+- Drive access limited to approved folder boundary
+- Read/write test passes inside boundary; fails outside
+- Auth model + scopes documented
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.9/`
+
+### 2.10 Authoritative Ledger in Drive 🟨 BACKLOG
+**DoD:**
+- Ledger persists in Drive and survives daily regeneration
+- Human status edits respected
+- Daily report is ledger-first
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.10/`
+
+### 2.11 Matter Management Agent 🟨 BACKLOG
+**DoD:**
+- Hourly Matter Dashboard runs (9–5, Mon–Fri)
+- Repo-local outputs only (no write-back)
+- Governance validation passes
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.11/`
+
+### 2.12 Calendar Scheduling 🟨 BACKLOG
+**DoD:**
+- Top-priority tasks scheduled to approved calendar
+- Human approval gate enforced
+- Audit logs for each calendar write
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.12/`
+
+### 2.13 Gmail Matter Labeling 🟨 BACKLOG
+**DoD:**
+- Deterministic matter-number labeling policy approved
+- Gmail labels applied via write-back (labels only)
+- Audit logging for each label write
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.13/`
 
 ---
 
